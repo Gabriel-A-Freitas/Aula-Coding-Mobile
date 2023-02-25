@@ -2187,12 +2187,12 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		.image.avatar {
+		.video.avatar {
 			border-radius: 100%;
 			overflow: hidden;
 		}
 
-			.image.avatar img {
+			.video.avatar video {
 				border-radius: 100%;
 				display: block;
 				width: 100%;
