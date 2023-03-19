@@ -26,6 +26,7 @@ self.addEventListener('install', event => {
         './images/icons/hk_96.png',
         './images/icons/hk_144.png',
         './images/icons/hk_192.png',
+        './images/icons/hk_512.png',
         './assets/img/formulas.JPG',
       ]))
   );
