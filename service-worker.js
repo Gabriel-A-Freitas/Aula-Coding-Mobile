@@ -17,9 +17,7 @@ self.addEventListener('install', event => {
 
         './assets/js/jquery.min.js',
 
-        './assets/js/popper.min.js',
-
-        './images/hk_48.png',
+        './assets/js/popper.min.js',        
 
         './assets/img/background.png',
         './assets/img/favicon.png',
