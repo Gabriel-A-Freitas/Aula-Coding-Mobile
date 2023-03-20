@@ -1,10 +1,35 @@
 {
   "name": "Hollow Knight Guia",
   "short_name": "HK Guia",
+  "description": "Uma introdução ao universo do jogo Hollow Knight",
   "icons": [
+    {
+      "src": "images/icons/hk_29.png",
+      "sizes": "29x29",
+      "type": "image/png"
+    },{
+      "src": "images/icons/hk_40.png",
+      "sizes": "40x40",
+      "type": "image/png"
+    },
     {
       "src": "images/icons/hk_48.png",
       "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/hk_57.png",
+      "sizes": "57x57",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/hk_58.png",
+      "sizes": "58x58",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/hk_60.png",
+      "sizes": "60x60",
       "type": "image/png"
     },
     {
@@ -13,8 +38,29 @@
       "type": "image/png"
     },
     {
+      "src": "images/icons/hk_80.png",
+      "sizes": "80x80",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/hk_87.png",
+      "sizes": "87x87",
+      "type": "image/png"
+    },
+    {
       "src": "images/icons/hk_96.png",
       "sizes": "96x96",
+      "type": "image/png"
+      
+    },
+    {
+      "src": "images/icons/hk_114.png",
+      "sizes": "114x114",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/hk_120.png",
+      "sizes": "120x120",
       "type": "image/png"
     },
     {
@@ -23,10 +69,14 @@
       "type": "image/png"
     },
     {
+      "src": "images/icons/hk_180.png",
+      "sizes": "180x180",
+      "type": "image/png"	  
+    },
+    {
       "src": "images/icons/hk_192.png",
       "sizes": "192x192",
-      "type": "image/png"
-	  
+      "type": "image/png"	  
     },
     {
       "src": "images/icons/hk_512.png",
@@ -35,7 +85,7 @@
 	    "purpose": "any maskable"
     }
   ],
-  "start_url": "index.html",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#31506F",
   "theme_color": "#4D5360"

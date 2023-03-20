@@ -1,49 +1,4 @@
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js%27');
-
-const CACHE = "pwabuilder-page";
-
-const offlineFallbackPage = "index.html";
-
-self.addEventListener("message", (event) => {
-  if (event.data && event.data.type === "SKIP_WAITING") {
-    self.skipWaiting();
-  }
-});
-
-self.addEventListener('install', async (event) => {
-  event.waitUntil(
-    caches.open(CACHE)
-      .then((cache) => cache.add(offlineFallbackPage))
-  );
-});
-
-if (workbox.navigationPreload.isSupported()) {
-  workbox.navigationPreload.enable();
-}
-
-self.addEventListener('fetch', (event) => {
-  if (event.request.mode === 'navigate') {
-    event.respondWith((async () => {
-      try {
-        const preloadResp = await event.preloadResponse;
-
-        if (preloadResp) {
-          return preloadResp;
-        }
-
-        const networkResp = await fetch(event.request);
-        return networkResp;
-      } catch (error) {
-
-        const cache = await caches.open(CACHE);
-        const cachedResp = await cache.match(offlineFallbackPage);
-        return cachedResp;
-      }
-    })());
-  }
-});
-
-/*var cacheName = 'pwaTeste+-v1.2';
+var cacheName = 'pwaTeste+-v1.2';
 
 self.addEventListener('install', event => {
 
@@ -58,23 +13,22 @@ self.addEventListener('install', event => {
         './assets/css/fontawesome-all.min.css',
         './assets/css/main.css',
 
-        './assets/js/bootstrap.min.js',
-
-        './assets/js/jquery.min.js',
-
-        './assets/js/popper.min.js',        
-
-        './assets/img/background.png',
-        './assets/img/favicon.png',
-        './assets/img/logo.png',
+        './images/icons/hk_29.png',
+        './images/icons/hk_40.png',
         './images/icons/hk_48.png',
+        './images/icons/hk_57.png',
+        './images/icons/hk_58.png',
+        './images/icons/hk_60.png',
         './images/icons/hk_72.png',
+        './images/icons/hk_80.png',
+        './images/icons/hk_87.png',
         './images/icons/hk_96.png',
+        './images/icons/hk_114.png',
+        './images/icons/hk_120.png',
         './images/icons/hk_144.png',
+        './images/icons/hk_180.png',
         './images/icons/hk_192.png',
-        './images/icons/hk_512.png',
-        './assets/img/formulas.JPG',
-
+        './images/icons/hk_512.png',        
 
       ]))
   );
@@ -94,7 +48,7 @@ self.addEventListener('fetch', function (event) {
      } catch (err) {
        return caches.match(event.request);
      }
-   }());*/
+   }());
 
   //Atualizacao cache
   /*event.respondWith(
@@ -107,4 +61,4 @@ self.addEventListener('fetch', function (event) {
       })
   );*/
 
-//});
+});

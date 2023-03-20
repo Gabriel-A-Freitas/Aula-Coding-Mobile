@@ -12,11 +12,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="manifest" href="manifest.json"/>
+	<meta name="mobile-web-app-capable" content="yes"> 
+	<meta name="msapplication-Tile-Image" content="images/icons/hk_144.png">
+	<meta name="msapplication-TileColor" content="#5e42a6">
+	<meta name="them-color" content="#312450">
+
+	<link rel="shortcut icon" sizes="192x192" href="images/icons/hk_192.png">
+	<link rel="shortcut icon" sizes="120x120" href="images/icons/hk_120.png">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="HK Guia">
+
+	<link rel="apple-touch-icon" href="images/icons/hk_144.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/icons/hk_114.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/icons/hk_180.png">
+	<link rel="apple-touch-icon" sizes="192x192" href="images/icons/hk_192.png">
+
+	<meta name="apple-mobile-web-app-capable" content="yes"/>	
+
+	<link rel="icon" type="image/png" href="images/icons/hk_144.png">
+
 </head>
 
 <body class="is-preload">
-
-
 
 	<!-- Header -->
 	<section id="header">
@@ -526,7 +545,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-	<script> navigator.serviceWorker.register('./service-worker.js'); </script>
+	<script> navigator.serviceWorker.register('/service-worker.js'); </script>	
 
 </body>
 
